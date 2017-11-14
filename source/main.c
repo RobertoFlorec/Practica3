@@ -37,17 +37,17 @@
 #include "MK64F12.h"
 #include "pushButton.h"
 
+uint8 currentState = 0;
 
-const BtnStateType BtnSate[8]=
+const BtnStateType BtnSate[7]=
 {
-	{},
-	{},
-	{},
-	{},
-	{},
-	{},
-	{},
-	{}
+	{MENU,menu},
+	{LEER_MEMORIA,leerMemoria},
+	{ESCRIBIR_MEMORIA,escribirMemoria},
+	{ESTABLECER_HORA,establecerHora},
+	{ESTABLECER_FECHA,establecerFecha},
+	{LEER_HORA,leerHora},
+	{LEER_FECHA,leerFecha}
 };
 
 int main(void) {

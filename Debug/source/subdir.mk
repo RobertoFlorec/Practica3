@@ -5,16 +5,19 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../source/GPIO.c \
+../source/NVIC.c \
 ../source/main.c \
 ../source/pushButton.c 
 
 OBJS += \
 ./source/GPIO.o \
+./source/NVIC.o \
 ./source/main.o \
 ./source/pushButton.o 
 
 C_DEPS += \
 ./source/GPIO.d \
+./source/NVIC.d \
 ./source/main.d \
 ./source/pushButton.d 
 

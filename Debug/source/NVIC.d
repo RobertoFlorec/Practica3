@@ -1,5 +1,5 @@
-source/pushButton.o source/pushButton.d: ../source/pushButton.c \
- ../source/GPIO.h ../source/DataTypeDefinitions.h ../source/NVIC.h \
+source/NVIC.o source/NVIC.d: ../source/NVIC.c ../source/NVIC.h \
+ ../source/DataTypeDefinitions.h \
  /Users/Roberto/mcuxpresso/SDKPackages/SDK_2/devices/MK64F12/MK64F12.h \
  /Users/Roberto/mcuxpresso/SDKPackages/SDK_2/CMSIS/Include/core_cm4.h \
  /Users/Roberto/mcuxpresso/SDKPackages/SDK_2/CMSIS/Include/core_cmInstr.h \
@@ -8,11 +8,9 @@ source/pushButton.o source/pushButton.d: ../source/pushButton.c \
  /Users/Roberto/mcuxpresso/SDKPackages/SDK_2/CMSIS/Include/core_cmSimd.h \
  /Users/Roberto/mcuxpresso/SDKPackages/SDK_2/devices/MK64F12/system_MK64F12.h
 
-../source/GPIO.h:
+../source/NVIC.h:
 
 ../source/DataTypeDefinitions.h:
-
-../source/NVIC.h:
 
 /Users/Roberto/mcuxpresso/SDKPackages/SDK_2/devices/MK64F12/MK64F12.h:
 

@@ -11,9 +11,9 @@
 #include "DataTypeDefinitions.h"
 
 typedef struct{
-	uint32 out;
-	void(*fptrBtnFtn)(uint32);
-	uint8 next[8];
+	uint32 state;
+	void(*fptrBtnFtn);
+//	uint8 next[2];
 }BtnStateType;
 
 typedef enum{
@@ -22,10 +22,17 @@ typedef enum{
 	ESCRIBIR_MEMORIA,
 	ESTABLECER_HORA,
 	ESTABLECER_FECHA,
-	FORMATO_HORA,
 	LEER_HORA,
-	LEER_FECHA,
-	COMUNICACION
+	LEER_FECHA
 }BtnFctnType;
+
+void buttonsInit(void);
+void menu(void);
+void leerMemoria(void);
+void escribirMemoria(void);
+void establecerHora(void);
+void establecerFecha(void);
+void leerHora(void);
+void leerFecha(void);
 
 #endif /* PUSHBUTTON_H_ */
